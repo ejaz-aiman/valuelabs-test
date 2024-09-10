@@ -42,18 +42,17 @@ const ProductTable = () => {
                 </thead>
                 <tbody>
                     {products.length > 0 ?
-                        products.map((product, index) => {
+                        products.map((product, index) => (
                             <tr key={product.id}>
                                 <td>{product.title}</td>
                                 <td>{product.description}</td>
                                 <td>
-                                    <img src={product.images[0]} alt={product.title} className="product-image"></img>
+                                    <img src={product.images[0]} alt={product.title} className="product-image" />
                                 </td>
                             </tr>
-                        }) : (
+                        )) : (
                             <tr>
-                                <td colSpan="3"> No products available
-                                </td>
+                                <td colSpan="3">No products available</td>
                             </tr>
                         )}
                 </tbody>
