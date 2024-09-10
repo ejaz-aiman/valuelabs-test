@@ -1,0 +1,41 @@
+.product-table-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: bisque;
+}
+
+.product-table {
+    width: 80%;
+    border-collapse: collapse;
+    background-color: blanchedalmond;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    /* height: 80%; */
+}
+
+.product-table th,
+.product-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid rgb(219, 199, 199);
+}
+
+.product-table th {
+    background-color: aqua;
+    color: white;
+}
+
+.product-table tr:hover {
+    background-color: rgb(220, 210, 119);
+}
+
+.product-image {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
